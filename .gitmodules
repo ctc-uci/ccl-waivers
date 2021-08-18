@@ -1,0 +1,6 @@
+[submodule "ccl-waivers-frontend"]
+	path = ccl-waivers-frontend
+	url = git@github.com:ctc-uci/ccl-waivers-frontend.git
+[submodule "ccl-waivers-backend"]
+	path = ccl-waivers-backend
+	url = git@github.com:ctc-uci/ccl-waivers-backend.git
