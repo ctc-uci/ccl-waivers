@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "description": "antalmanac.com",
     "scripts": {
-        "client-install": "cd ./ccl-waivers-frontend && npm install",
-        "server-install": "cd ./ccl-waivers-backend && npm install",
-        "dependency-install": "concurrently \"npm run client-install\" \"npm run server-install\"",
+        "frontend-install": "cd ./ccl-waivers-frontend && npm install",
+        "backend-install": "cd ./ccl-waivers-backend && npm install",
+        "submodules-install": "concurrently \"npm run frontend-install\" \"npm run backend-install\"",
+        "postinstall": "npm run submodules-install",
         "backend": "npm run start --prefix ./ccl-waivers-backend",
         "frontend": "npm run start --prefix ./ccl-waivers-frontend",
         "start": "concurrently \"npm run backend\" \"npm run frontend\""
