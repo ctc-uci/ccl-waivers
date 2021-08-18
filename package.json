@@ -1,0 +1,16 @@
+{
+    "name": "antalmanac",
+    "version": "1.0.0",
+    "description": "antalmanac.com",
+    "scripts": {
+        "client-install": "cd ./ccl-waivers-frontend && npm install",
+        "server-install": "cd ./ccl-waivers-backend && npm install",
+        "dependency-install": "concurrently \"npm run client-install\" \"npm run server-install\"",
+        "backend": "npm run start --prefix ./ccl-waivers-backend",
+        "frontend": "npm run start --prefix ./ccl-waivers-frontend",
+        "start": "concurrently \"npm run backend\" \"npm run frontend\""
+    },
+    "devDependencies": {
+        "concurrently": "^5.3.0"
+    }
+}
