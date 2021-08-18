@@ -1,7 +1,7 @@
 {
-    "name": "antalmanac",
+    "name": "ccl-waivers",
     "version": "1.0.0",
-    "description": "antalmanac.com",
+    "description": "An online waiver system for Child Creativity Lab",
     "scripts": {
         "frontend-install": "cd ./ccl-waivers-frontend && npm install",
         "backend-install": "cd ./ccl-waivers-backend && npm install",
